@@ -89,7 +89,7 @@ If ($newok == "0"){
 }
 If ($newok == "1"){
 $sql->db_Insert("aacgc_pnews", "NULL, '".$newstitle."', '".$newssum."', '".$newsdesc."', '".$newsimg."', '".$newscat."', '".$newsauthor."', '".$newsdate."'") or die(mysql_error());
-$ns->tablerender("", "<center><b>News Added</b></center>");
+$ns->tablerender("", "<center><b>".APNEWS_96."</b></center>");
 
 $sql2->db_Insert("private_msg", "NULL, '".$newpmfrom."', '".$newpmto."', '".$newpmsent."', '".$newpmread."', '".$newpmsubject."', '".$newpmtext."', '".$newpmsenddel."', '".$newpmreaddel."', '".$newpmatt."', '".$newpmoption."', '".$newpmsize."'") or die(mysql_error());
 
